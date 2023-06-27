@@ -1,0 +1,49 @@
+#main {
+    margin-top: 60px;
+    display: flex;
+    min-height: 100vh;
+    #aside {
+        width: 300px;
+        background-color: #000;
+        border-right: 1px solid #fff;
+        button {
+            width: 80%;
+            font-size: 16px;
+            text-align: left;
+            margin: 10px 40px 0;
+            padding: 10px;
+            color: #fff;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            cursor: pointer;
+            
+            .icon {
+                font-size: 16px;
+                vertical-align: -1px;
+                margin-right: 10px;
+            }
+            &:hover{
+                background-color: #8d8b8b;
+                border-radius: 50px;
+            }
+        }
+    }
+    #contents {
+        width: calc(100% - 300px);
+        background-color: #000;
+        padding: 20px;
+        color: #fff;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px 0;
+            li {
+                width: 32%;
+                background-color: #8d8b8b;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
