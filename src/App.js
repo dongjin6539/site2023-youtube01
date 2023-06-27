@@ -8,9 +8,9 @@ const App = () => {
             <HeaderCont />
             <Routes>
                 <Route path="/" element={<MainConts />}></Route>
-                <Route path="/video" element={<VideoConts />}></Route>
-                <Route path="/channel" element={<ChannelConts />}></Route>
-                <Route path="/search" element={<SearchConts />}></Route>
+                <Route path="/video/:id" element={<VideoConts />}></Route>
+                <Route path="/channel/:id" element={<ChannelConts />}></Route>
+                <Route path="/search/:searchTerm" element={<SearchConts />}></Route>
             </Routes>
         </BrowserRouter>
     );
