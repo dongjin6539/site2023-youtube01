@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Category, Videos } from './';
+// import Loader from './Loader';
 
 const MainConts = () => {
     const [selectCategory, setSelectCategory] = useState('헬스 유튜브');
@@ -10,17 +11,19 @@ const MainConts = () => {
     }, [selectCategory]);
 
     const fetchVideos = category => {
-        // const searchQuery = encodeURIComponent(category);
-        // const url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=48&q=${searchQuery}&type=video&videoDuration=medium&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`;
-        const url = 'https://webstoryboy.github.io/site-youtube01/src/utils/test.json';
+        const searchQuery = encodeURIComponent(category);
+        const url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${searchQuery}&type=video&videoDuration=medium&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`;
+        // const url = 'https://webstoryboy.github.io/site-youtube01/src/utils/test.json';
         fetch(url)
             .then(response => response.json())
             .then(result => {
-                console.log(result.items);
+                // console.log(result.items);
                 setYoutubes(result.items);
             })
             .catch(error => console.log(error));
     };
+
+    // if (!videos?.items) return <Loader />;
 
     return (
         <main id="main">

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ReactPlayer from 'react-player';
 import { Link, useParams } from 'react-router-dom';
-import Loader from './Loader';
+import { Loader } from './';
 import { PiHeartStraight } from 'react-icons/pi';
 import { BiChevronDownCircle } from 'react-icons/bi';
 

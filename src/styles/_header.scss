@@ -22,10 +22,19 @@
     }
     .search {
         width: calc(100% - 300px);
+        position: relative;
+        label {
+            position: absolute;
+            left: 8px;
+            top: 8px;
+            z-index: 1;
+            font-size: 18px;
+            color: #000;
+        }
         input {
             width: 98%;
             border: 0;
-            padding: 10px 20px;
+            padding: 10px 30px;
             border-radius: 10px;
             background-color: #fff;
             &::-webkit-input-placeholder {
@@ -48,6 +57,10 @@
         .search {
             width: 100%;
             padding-bottom: 15px;
+            label {
+                left: 46px;
+                top: 8px;
+            }
             input {
                 width: 90%;
                 margin-left: 5%;
