@@ -6,7 +6,7 @@ SITE2023-YOUTUBE01
 
 ## 사이트
 
-https://sdj-site-next01.netlify.app/
+https://sdj-site-youtube01.netlify.app/
 
 ## 사용 스택
 
