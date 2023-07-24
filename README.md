@@ -2,7 +2,7 @@
 SITE2023-YOUTUBE01
 
 ## React.js 사용하기
-![image](https://github.com/dongjin6539/site2023-react01/blob/main/readme.png)
+![image](https://github.com/dongjin6539/site2023-youtube01/blob/main/readme.png)
 
 ## 사이트
 
